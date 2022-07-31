@@ -38,7 +38,7 @@ def add(countries):
         countries[code] = name
         print(f"{name} was added.\n")
 
-def delet(countries):
+def delete(countries):
     code = input("Enter country code:  ")
     code = code.upper()
     if code in countries:
@@ -61,7 +61,7 @@ def main():
         elif command == "add":
             add(countries)
         elif command == "del":
-            delete(countries)
+             delete(countries)
         elif command == "exit":
             print("Bye!")
             break
